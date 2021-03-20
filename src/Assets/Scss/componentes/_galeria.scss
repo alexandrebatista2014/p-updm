@@ -1,0 +1,121 @@
+
+// Crop thumbnail images.
+#galeriaModal {
+  img {
+      height: 75vw;
+      object-fit: cover;
+      cursor: pointer;
+
+      @media (min-width: $bootstrap-sm) {
+          height: 35vw;
+      }
+
+      @media (min-width: $bootstrap-lg) {
+          height: 100%;
+      }
+  }
+
+  // Crop images in lightbox.
+  .carousel-item {
+      img {
+          height: 60vw;
+          object-fit: cover;
+
+          @media (min-width: $bootstrap-sm) {
+              height: 500px;
+          }
+      }
+  }
+}
+
+// --- END: crop images --- //
+
+#galeriaModal.custom {
+  .modal-content {
+      background: none;
+      border: none;
+  }
+
+  .modal-header {
+      border: none;
+
+      button {
+          background: none;
+          border-radius: 100px 100px 0 0;
+          padding: 5px 10px;
+          opacity: 1;
+          position: relative;
+          top: 3px;
+          border: solid 2px white;
+          transition: 0.5s;
+
+          @media (min-width: $bootstrap-lg) {
+              top: 7px;
+          }
+
+          &:hover {
+              top: 3px;
+          }
+      }
+
+      span {
+          color: white;
+      }
+  }
+
+  .modal-body {
+      padding: 0;
+      border: none;
+      position: relative;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      font-size: 2em;
+      top: auto;
+      opacity: 1;
+      bottom: -52px;
+
+      @media (min-width: $bootstrap-md) {
+          top: 0;
+          opacity: 0.5;
+          bottom: 0;
+      }
+  }
+
+  .carousel-control-prev {
+      @media (min-width: $bootstrap-md) {
+          left: -90px;
+      }
+  }
+
+  .carousel-control-next {
+      @media (min-width: $bootstrap-md) {
+          right: -90px;
+      }
+  }
+
+  .carousel-indicators {
+      bottom: -40px;
+
+      li {
+          height: 10px;
+          width: 10px;
+          border-radius: 100px;
+          background: none;
+          border: solid 2px white;
+
+          @media (min-width: $bootstrap-lg) {
+              height: 5px;
+          }
+
+          &:hover {
+              background: white;
+          }
+
+          &.active {
+              background: white;
+          }
+      }
+  }
+}

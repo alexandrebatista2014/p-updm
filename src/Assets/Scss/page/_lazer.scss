@@ -1,0 +1,43 @@
+
+  .banner-lazer {
+      background: url(../../Image/topo-lazer.jpg) no-repeat top center #d4cdc9;
+      background-size: cover;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+  }
+  .destaque-lazer {
+      background-color: #d4cdc9;
+      text-align: center;
+      .card {
+        background: none;
+        border: none;
+        padding: 1rem;
+        span {
+          display: inline-block;
+          height: 70px;
+          width: 70px;
+          border: 1px solid #000;
+          margin: 0 auto;
+        }
+        h4 {
+          padding-top: 0.5rem;
+        }
+      }
+  }
+  .bussola {
+      position: relative;
+      background: url(../../Image/bg-arvore2.jpg) no-repeat bottom center #d4cdc9;
+      background-size: cover;
+      min-height: 400px;
+      margin-bottom: 3rem;
+      img {
+          position: absolute;
+          bottom: -150px;
+          left: 50%;
+          right: 50%;
+          transform: translateX(-50%);
+          z-index: 999;
+          height: 250px;
+      }
+  }

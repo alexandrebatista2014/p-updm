@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../Assets/Scss/App.scss';
 
 const Header = () => {
   return (
@@ -10,8 +9,10 @@ const Header = () => {
           Home
         </NavLink>
         <NavLink to="Apousada">A Pousada</NavLink>
+        <NavLink to="Acomodacao">Acomodação</NavLink>
+        <NavLink to="Lazer">Lazer</NavLink>
+        <NavLink to="Contato">Contato</NavLink>
       </nav>
-      <h1>Header</h1>
     </div>
   );
 };

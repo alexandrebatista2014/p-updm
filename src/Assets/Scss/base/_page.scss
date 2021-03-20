@@ -1,0 +1,109 @@
+body {
+  background: #f7f7f7;
+  color: $text;
+  font-family: "Source Sans Pro", serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.page-section {
+  padding: 100px 0;
+}
+
+.titulo-body {
+  padding: 1.5rem;
+  p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding: 1.5rem 0;
+  }
+}
+
+.titulo-lg {
+  font-size: 3.8rem;
+  padding-bottom: 1rem;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 20%);
+  }
+}
+
+.text-shadown {
+  text-shadow: -3px 3px 6px rgba(0,0,0,0.4);
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.font-escrita {
+  @include escrita-font;
+  letter-spacing: 1px;
+  padding-top: 0.1rem !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $secondary;
+  font-family: "DM Serif Display", serif, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+h1, h2 {
+  font-size: 2.5rem;
+}
+
+.carousel-inner {
+  height: calc(100vh - 56px);
+  .carousel-item {
+    img {
+      object-fit: cover;
+      height: 100vh;
+    }
+  }
+}
+
+.destaque, .destaque-lg {
+  background: $span-color;
+  padding: 0.3rem 0.5rem;
+  color: $gray-100;
+  @include escrita-font;
+  letter-spacing: 1px;
+}
+
+.destaque-lg {
+  font-size: 2rem;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $gray-100;
+}
+
+.banner-destaque {
+  background: url(../../Image/banner-un-paso-del-mar-destaque.jpg) no-repeat center left;
+  background-size: cover;
+  min-height: 500px;
+  h2 {
+    color: $gray-100;
+  } 
+  @media (max-width: $bootstrap-lg) {
+    background: url(../../Image/banner-un-paso-del-mar-destaque-md.jpg)  no-repeat center left;
+    background-size: cover;
+  }
+}
+
+.banner-chamada, .banner-reserva {
+  background: url(../../Image/banner-un-paso-del-mar-destaque.jpg) no-repeat center left;
+  background-size: cover;
+  color: $gray-100;
+  h2 {
+    color: $gray-100;
+  }
+  @media (max-width: $bootstrap-lg) {
+    background: url(../../Image/banner-un-paso-del-mar-destaque-md.jpg)  no-repeat center center;
+    background-size: cover;
+  }
+}

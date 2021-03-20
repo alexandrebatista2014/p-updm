@@ -4,5 +4,20 @@ nav a {
   padding: 1rem
 }
 
-
+// Base
 @import "~bootstrap/scss/bootstrap";
+@import "base/mixins";
+@import "base/variavel";
+@import "base/page";
+
+// Componentes
+@import "componentes/animate-shadown";
+@import "componentes/button";
+@import "componentes/galeria";
+
+
+// Pages
+@import "page/home";
+@import "page/acomodacao";
+@import "page/lazer";
+@import "page/footer";
